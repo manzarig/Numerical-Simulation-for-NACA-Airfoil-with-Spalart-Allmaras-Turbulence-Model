@@ -1,0 +1,56 @@
+\input{preambulo}
+
+% ---- compila o \'{\i}ndice  ----
+\makeindex
+%\makeglossaries
+% ---
+\usepackage[utf8]{inputenc}
+
+% Required package
+\usepackage{amsmath,bm}
+\usepackage{float}
+% ---- In\'{\i}cio do documento ----
+\begin{document}
+\frenchspacing
+
+% --- Capa ---
+\imprimircapa
+
+% ---
+\cleardoublepage
+
+%% --- inserir lista de ilustra\c{c}\~{o}es ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+%% ---
+
+%% --- inserir o sumario ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\clearpage
+%% ---
+
+\pagenumbering{arabic}
+\setcounter{page}{6}
+
+% ---- ELEMENTOS TEXTUAIS ----
+\textual
+
+\include{introducao}
+
+
+%\include{resultados}
+
+% --- Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz ---
+\bookmarksetup{startatroot}%
+% ---
+
+% ---- ELEMENTOS P\'{O}S-TEXTUAIS ----
+\postextual
+
+% ---- Refer\^{e}ncias bibliogr\'{a}ficas ----
+%\nocite{*}
+\bibliography{references}
+
+\end{document}
