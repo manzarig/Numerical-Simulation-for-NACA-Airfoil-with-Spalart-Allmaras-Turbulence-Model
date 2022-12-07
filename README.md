@@ -1,6 +1,6 @@
 # Escoamento Turbulento em torno de aerofólio 2D
 
-* Este trabalho foi desenvolvido no abito da matéria de **Introdução aos Métodos Numéricos Aplicados à Engenharia**
+* Este trabalho foi desenvolvido no âmbito da matéria de **Introdução aos Métodos Numéricos Aplicados à Engenharia**
 * Sobre o rientação do professor **DR. Prof. William Wolf** 
 * Propositor do trabalho 
 * Quais linguagem usadas, o que aprendeu
